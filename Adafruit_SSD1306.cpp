@@ -1222,7 +1222,8 @@ void Adafruit_SSD1306::dim(bool dim){
 /**************************************************************************/
 /*!
         @brief Set all text alignmet to center at X axis and Y axis
-        @param dataString text to be displayed on the LCD
+        @param dataString Data to be displayed. Each data separated with comma (",")
+        with String type.
         @param xSize   text size X axis
         @param ySize   text size Y axis
         @param spacee  space beetwen data in pixel(s)
@@ -1238,7 +1239,8 @@ void Adafruit_SSD1306::printAlignmentCenter(String dataString, byte xSize, byte 
 /**************************************************************************/
 /*!
         @brief Set all text alignmet to center at X axis and Y axis
-        @param dataString text to be displayed on the LCD
+        @param dataString Data to be displayed. Each data separated with comma (",")
+        with String type.
         @param headerOrFooter header or footer data
         @param xSize   text size X axis
         @param ySize   text size Y axis
@@ -1260,7 +1262,8 @@ void Adafruit_SSD1306::printAlignmentCenter(String dataString, String headerOrFo
 /**************************************************************************/
 /*!
         @brief Set all text alignmet to center at X axis and Y axis
-        @param dataString text to be displayed on the LCD
+        @param dataString Data to be displayed. Each data separated with comma (",")
+        with String type.
         @param header  text to be displayed before the data
         @param footer  text to be displayed after the data
         @param xSize   text size X axis
