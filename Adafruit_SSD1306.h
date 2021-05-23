@@ -142,6 +142,12 @@ public:
 
   ~Adafruit_SSD1306(void);
 
+  //  mine
+  void printAlignmentCenter(String dataString, byte xSize, byte ySize, byte spacee);
+  void printAlignmentCenter(String dataString, String headerOrFooter[], byte xSize, byte ySize, byte spacee, bool noFooter);
+  void printAlignmentCenter(String dataString, String header[], String footer[], byte xSize, byte ySize, byte spacee);
+  //
+
   bool begin(uint8_t switchvcc = SSD1306_SWITCHCAPVCC, uint8_t i2caddr = 0,
              bool reset = true, bool periphBegin = true);
   void display(void);
