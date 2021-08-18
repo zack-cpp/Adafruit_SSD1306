@@ -1298,9 +1298,9 @@ void Adafruit_SSD1306::printAlignmentCenter(String dataString, String header[], 
   for (byte i = 0; i < jumlahData; i++){
     text[i] = header[i] + data[i] + footer[i];
     //  display alignment center
-    if (text[i].length() < SCREEN_WIDTH - (6 * textXSize)){
-      xCoord[i] = (128 - (text[i].length() * 6 * textXSize)) / 2 - 1;
-      yCoord[i] = (64 - (jumlahData * 8 * textYSize + (jumlahData * spacee - spacee))) / 2 + (i * 18);
+    if (text[i].length() < SCREEN_WIDTH - (6 * xSize)){
+      xCoord[i] = (128 - (text[i].length() * 6 * xSize)) / 2 - 1;
+      yCoord[i] = (64 - (jumlahData * 8 * ySize + (jumlahData * spacee - spacee))) / 2 + (i * ((8 * ySize) + spacee));
     }
     setCursor(xCoord[i], yCoord[i]);
     print(text[i]);
